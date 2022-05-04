@@ -1,0 +1,12 @@
+@keyframes header_anim {
+    0%{
+        background: rgb(255, 255, 255);
+        
+    }
+    50% {
+        background: rgba(255, 255, 255, 0.95);
+    }
+    100% {
+        background: rgba(255, 255, 255, 0.9);
+    }
+}
