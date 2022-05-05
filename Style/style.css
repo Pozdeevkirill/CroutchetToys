@@ -4,6 +4,7 @@ body, h1,h2,p {
 
 a {
     text-decoration: none;
+    color: #886788;
 }
 
 .container {
@@ -16,6 +17,8 @@ a {
     background: white;  
     position: fixed;  
     top: 0;  
+    right: 0;
+    left: 0;
     z-index: 100;  
     width: 100%;
 }
@@ -24,10 +27,11 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0px 25px;
 }
 
 .min_content {
-    display: flex;
+    display: none;
     justify-content: space-between;
     padding: 15px 25px;
     align-items: center;
@@ -36,9 +40,14 @@ a {
     display: flex;
     justify-content: space-around;
     padding: 25px 0px;
+    min-width: 40%;
+    font-size: 20px;
+    color: #886788;
+    font-family: "Pangolin-Regular";
 }
 
 .header2 {
+    display: block;
     height: 100vh;
     top: 0px;
     background-image: url(../Media/scale_1200\ 1.jpg);
@@ -107,6 +116,7 @@ a {
 .card_interactable {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .btn {
@@ -139,33 +149,123 @@ a {
     font-size: 28px;
 }
 
-.asd{
+.center{
     text-align: center;
 }
 
 .line {
     margin: 0 auto;
-    margin: 0px 100px;
-    min-width: 406px;
+    margin: 151px 100px;
+    min-width: 40%;
     border-bottom: 5px solid #886788;
 }
 
+.card_delivery_holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:  0 auto;
+}
 
+.delivery_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 276px;
+    font-family: "Pangolin-Regular";
+    margin: 0 auto;
+    margin-bottom: 125px;
+    margin-right: 2%;
+}
 
-@media (max-width: 1240px) {
-    .Title {
-        font-size: 35px;
-    }
-    .Title span a img {
-        width: 85px;
+.delivery_card img {
+    margin-bottom: 18%;
+}
+
+.card_delivery_content h2 {
+    font-size: 30px;
+}
+
+.card_delivery_content p {
+    color: #9B9B9B;
+    margin-top: 7%;
+    font-size: 20px;
+    max-width: 350px;
+}
+
+.arrow {
+    margin-right: 2%;
+}
+
+@media (max-width: 1200px){
+    .header2{
+        display: block;
     }
 }
 
-@media (max-width: 819px) {
+@media (max-width: 819px)  {
     .Title {
         font-size: 25px;
     }
     .Title span a img {
         width: 65px;
     }
+
+    .full_content {
+        display:none;
+    }
+    .min_content {
+        display: flex;
+    }
+    .header2{
+        display: none;
+    }
+
+    .card {
+        max-width: 380px;
+        margin-bottom: 57px;
+    }
+
+    .card img {
+        max-width: 380px;
+    }
+    .card_title {
+        font-size: 30px;
+    }
+    .card_disciprion {
+        font-size: 20px
+    }
+    .btn {
+        font-size: 20px;
+    }
+    .card_price {
+        font-size: 20px;
+    }
+
+    .line {
+        margin: 80px 100px;
+    }
 }
+
+@media (max-width: 419px)  {
+    .Title {
+        font-size: 25px;
+    }
+    .Title span a img {
+        width: 65px;
+    }
+
+    .full_content {
+        display:none;
+    }
+    .min_content {
+        display: flex;
+    }
+}
+
+
+
+
+
+
