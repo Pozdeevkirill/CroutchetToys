@@ -330,6 +330,10 @@ a {
     color: #886788;
 }
 
+.stop_scrol {
+    overflow-y: hidden;
+}
+
 @media (max-width: 1200px){
     .header2{
         display: block;

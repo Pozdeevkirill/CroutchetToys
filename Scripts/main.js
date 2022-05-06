@@ -1,6 +1,6 @@
 let header2 = document.querySelector(".header2");
 let header = document.querySelector(".header");
-
+let body = document.body;
 
 let minOpenBtn = document.querySelector(".menu_btn");
 let minCloseBtn = document.querySelector('.close_minMenu_btn');
@@ -11,15 +11,17 @@ const posTop = document.querySelector("#catalog").getBoundingClientRect().top;
 
 
 
-minOpenBtn.addEventListener('click', function(e) {
+minOpenBtn.addEventListener('click', function() {
     if (minMenu.style.display != "block") { 
-        minMenu.style.display = "block"; //Показываем элемент
+        minMenu.style.display = "block";
+        body.classList.add("stop_scrol");
     }
 });
 
-minCloseBtn.addEventListener('click', function(e) {
+minCloseBtn.addEventListener('click', function() {
     if (minMenu.style.display = "block") { 
-        minMenu.style.display = "none"; //Показываем элемент
+        minMenu.style.display = "none"; 
+        body.classList.remove("stop_scrol");
     }
 });
 
