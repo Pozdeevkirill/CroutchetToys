@@ -334,6 +334,12 @@ a {
     overflow-y: hidden;
 }
 
+.item_title {
+    font-size: 24px;
+    color: #fff;
+    font-family: "AmaticSC-Bold";
+}
+
 @media (max-width: 1200px){
     .header2{
         display: block;
@@ -387,9 +393,6 @@ a {
         margin: 0 auto;
         padding-left: 0%;
     }
-    
-
-    
 }
 
 @media (max-width: 1000px) {

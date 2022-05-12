@@ -143,6 +143,7 @@ a {
     flex-wrap: wrap;
     max-width: 1200px;
     margin: auto;
+    justify-content: center;
 }
 
 .card {
@@ -176,6 +177,7 @@ a {
     font-size: 20px;
     padding: 8px 18px;
     border-radius: 13px;
+    font-family: "Pangolin-Regular";
 }
 
 .card_text {
@@ -345,13 +347,13 @@ a {
 }
 
 .item_card {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 7%;
+    padding-bottom: 7%;
     max-width: 1200px;
     margin: auto
 }
 
-.item_card img {
+.item_img {
     max-width: 420px;
     max-height: 360px;
 }
@@ -370,7 +372,7 @@ a {
   .custom-radios input[type="radio"] + label span {
     display: inline-block;
     width: 40px;
-    height: 40px;
+    height:40px;
     margin: -1px 4px 0 0;
     vertical-align: middle;
     cursor: pointer;
@@ -401,16 +403,49 @@ a {
 
 .item_title {
     font-size: 24px;
+    font-family: "Pangolin-Regular";
+    margin-bottom: 18px;
 }
 
 .item_description {
-    font-family: "AmaticSC-Regular";
+    font-family: "Pangolin-Regular";
     font-size: 14px;
+    margin-bottom: 10px;
 }
 
 
 .color_color {
     display: inline-block;
+}
+
+.color_text {
+    margin-bottom: 10px;
+}
+
+.item_image {
+    max-width: 40%;
+}
+
+.item_interactable {
+    margin-top: 20px;   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item_price {
+
+    font-family: "Pangolin-Regular";
+    font-size: 20px;
+}
+
+.color_picker {
+    margin-top: 15px;
+}
+
+.color_text {
+    font-family: "Pangolin-Regular";
+    font-size: 24px;
 }
   
 
@@ -441,6 +476,7 @@ a {
     .card {
         max-width: 165px;
         margin-bottom: 57px;
+        min-height: 0px;
     }
 
     .card_text {
@@ -473,6 +509,16 @@ a {
     .heading {
         font-size: 30px;
     }
+
+    .custom-radios input[type="radio"] + label span {
+        width: 30px;
+        height:30px;
+        line-height: 23px;
+    }
+
+    .custom-radios input[type="radio"] +  label span img {
+        margin-top: 4px;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -496,6 +542,12 @@ a {
         flex-direction: column;
     }
 
+    .card {
+        max-width: 265px;
+        margin-bottom: 57px;
+        min-height: 0px;
+    }
+
 
     .card_delivery_holder {
         flex-direction: column;
@@ -511,6 +563,36 @@ a {
     }
     .arrow img {
         content: url(../Media/DeliveryIcons/arrow_down.svg);
+    }
+    .item_card {
+        flex-direction: column;
+        align-items: center;
+        max-width: 340px;
+    }
+    .item_card_content {
+        margin-top: 25px;
+        max-width: 340px;
+    }
+
+    .item_card_content {
+        max-width: 440px;
+        margin-top: 18px;
+    }
+    .item_image{
+        max-width: 340px;
+        height: 260px;
+    }
+
+    .item_title {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    .color_text {
+        font-size: 20px;
+    }
+    .item_description{
+        font-size: 16px;
     }
 }
 
